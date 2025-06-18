@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100dvw;
+  font-family: "SUSE", sans-serif;
+    background-color: #120042;
+
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #160043;
+  height: 10vh;
+}
+#brand {
+  color: #05f2f2;
+  font-family: "Tourney", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: auto;
+  font-size: 1.8rem;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navItem {
+  margin: 0.8rem;
+  color: #f205b3;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.bi-person-circle {
+  font-size: 1.5rem;
+}
+main {
+  margin: 0;
+  background-color: #120042;
+}
+.homePageTitle {
+  display: flex;
+  background: #f205b3;
+  height: 35vh;
+  background: linear-gradient(
+    0deg,
+    rgba(242, 5, 179, 1) 0%,
+    rgba(22, 0, 67, 1) 44%
+  );
+}
+h2 {
+  width: 65%;
+  font-size: 3rem;
+  color: #05f2f2;
+  margin: 0 auto;
+  text-align: center;
+}
+h2 span {
+  width: 70%;
+  font-size: 2rem;
+  text-align: center;
+  color: #f205b3;
+}
+.btnSection {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+  height: 8%;
+}
+button {
+  border-radius: 10px;
+  width: 35%;
+  font-weight: 700;
+}
+#createBtn {
+  background-color: #f205b3;
+  color: azure;
+}
+#joinBtn {
+  background-color: #05f2f2;
+}
+.upcommingEventSect {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+h3 {
+  /* margin: 1rem 0; */
+  width: 75%;
+  color: #05f2f2;
+  font-family: "Megrim", system-ui;
+  text-align: center;
+}
+.eventCard {
+  width: 45%;
+  border: #f205b3 solid;
+}
+.eventTitle {
+  color: #f205b3;
+}
+.eventDate {
+  color: #05f2f2;
+}
+.eventDescription {
+  color: azure;
+}
+footer {
+  height: 15vh;
+  background-color: #120042;
+}
