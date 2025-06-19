@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Megrim&family=SUSE:wght@100..800&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
     <title>EventMate</title>
 </head>
+
 <body>
-        <label for="email">Email:</label>
-    <input type="email" name="" id="email" />
-    <label for="pass">Password :</label>
-    <input type="password" name="" id="pass" />
-    <button id="signupBtn">S'inscrire</button>
-    <button id="loginBtn">Se connecter</button>
-    <button id="logoutBtn">Se déconnecter</button>
-        <!-- scripts -->
+    <header>
+        <h1 id="brand">EventMate</h1>
+        <nav class="navbar">
+            <a href="./index.html" class="navItem">Accueil</a>
+            <a href="./event.html" class="navItem">Evènements</a>
+            <a href="./login.html" class="navItem active"><i class="bi bi-person-circle"></i></a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="formTitle">Connexion</h2>
+        <section class="loginSect">
+
+            <form action="" class="loginForm" method="post">
+                <label for="email">Email:</label>
+                <input type="email" name="" id="email" />
+                <label for="pass">Password :</label>
+                <input type="password" name="" id="pass" />
+                <a class="forgotPass" href="#">Mot de passe oublié?</a>
+                <button id="loginBtn">Se connecter</button>
+            </form>
+            <p>Nouveau Ici ?
+                <a href="#" class="signupLink">S'inscrire</a>
+            </p>
+        </section>
+        <section class="errorForm hidden">
+
+        </section>
+        <section class="signupSect hidden">
+            <form class="signupForm" action="" method="post">
+                <i class="bi bi-arrow-left-circle"></i>
+                <label for="name">Nom:</label>
+                <input type="text" name="name" id="name" required />
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="emailSignup" required />
+                <label for="pass">Mot de passe :</label>
+                <input type="password" name="password" id="passSignup" required />
+                <label for="confirmPass">Confirmer mot de passe :</label>
+                <input type="password" name="confirmPass" id="confirmPass" required />
+                <button type="button" id="signupBtn">S'inscrire</button>
+            </form>
+        </section>
+
+        <!-- <button id="logoutBtn">Se déconnecter</button> -->
+    </main>
+    <footer></footer>
+    <!-- scripts -->
     <script type="module" src="./js/main.js"></script>
 </body>
+
 </html>
